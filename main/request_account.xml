@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:fcub="http://fcubs.ofss.com/service/FCUBSAccService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fcub:CREATECUSTACC_FSFS_REQ>
+
+         <fcub:FCUBS_HEADER>
+            <fcub:SOURCE>BANKON</fcub:SOURCE>
+            <fcub:UBSCOMP>FCUBS</fcub:UBSCOMP>
+            <fcub:MSGID>20002</fcub:MSGID>
+            <fcub:CORRELID>20002</fcub:CORRELID>
+            <fcub:USERID>BANKON</fcub:USERID>
+            <fcub:BRANCH>002</fcub:BRANCH>
+            <fcub:SERVICE>FCUBSAccService</fcub:SERVICE>
+            <fcub:OPERATION>CreateCustAcc</fcub:OPERATION>
+         </fcub:FCUBS_HEADER>
+
+         <fcub:FCUBS_BODY>
+            <fcub:Cust-Account-Full>
+
+               <fcub:BRN>002</fcub:BRN>
+               <fcub:ACC>1010199277623</fcub:ACC>
+               <fcub:CUSTNO>0199537</fcub:CUSTNO>
+               <fcub:ACCLS>201</fcub:ACCLS>
+               <fcub:CCY>ZMW</fcub:CCY>
+               <fcub:ADESC>TEST ACCOUNT</fcub:ADESC>
+
+               <fcub:CustAcc>
+                  <fcub:Misdetails>
+                     <fcub:POOLCD>DFLTPOOL</fcub:POOLCD>
+                  </fcub:Misdetails>
+               </fcub:CustAcc>
+
+            </fcub:Cust-Account-Full>
+         </fcub:FCUBS_BODY>
+
+      </fcub:CREATECUSTACC_FSFS_REQ>
+   </soapenv:Body>
+</soapenv:Envelope>

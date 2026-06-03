@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:fcub="http://fcubs.ofss.com/service/FCUBSCustomerService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fcub:CREATECUSTOMER_FSFS_REQ>
+
+         <fcub:FCUBS_HEADER>
+            <fcub:SOURCE>BANKON</fcub:SOURCE>
+            <fcub:UBSCOMP>FCUBS</fcub:UBSCOMP>
+            <fcub:MSGID>10001</fcub:MSGID>
+            <fcub:CORRELID>10001</fcub:CORRELID>
+            <fcub:USERID>BANKON</fcub:USERID>
+            <fcub:BRANCH>001</fcub:BRANCH>
+            <fcub:SERVICE>FCUBSCustomerService</fcub:SERVICE>
+            <fcub:OPERATION>CreateCustomer</fcub:OPERATION>
+         </fcub:FCUBS_HEADER>
+
+         <fcub:FCUBS_BODY>
+            <fcub:Customer-Full>
+               <fcub:NAME>JACKSON</fcub:NAME>
+               <fcub:FULLNAME>JACKSON NKONDE</fcub:FULLNAME>
+               <fcub:ADDRLN1>13</fcub:ADDRLN1>
+               <fcub:ADDRLN2>NGOMBE</fcub:ADDRLN2>
+               <fcub:ADDRLN3>LUSAKA</fcub:ADDRLN3>
+               <fcub:ADDRLN4>LUSAK_PRV</fcub:ADDRLN4>
+               <fcub:COUNTRY>ZM</fcub:COUNTRY>
+               <fcub:NLTY>ZM</fcub:NLTY>
+               <fcub:SNAME>256600/71/5</fcub:SNAME>
+               <fcub:UIDVAL>256600/71/5</fcub:UIDVAL>
+               <fcub:TAXIDENTITY>1009393340</fcub:TAXIDENTITY>
+
+               <fcub:Custpersonal>
+                  <fcub:MOBNUM>972302375</fcub:MOBNUM>
+                  <fcub:EMAILID>test@gmail.com</fcub:EMAILID>
+               </fcub:Custpersonal>
+
+            </fcub:Customer-Full>
+         </fcub:FCUBS_BODY>
+
+      </fcub:CREATECUSTOMER_FSFS_REQ>
+   </soapenv:Body>
+</soapenv:Envelope>
